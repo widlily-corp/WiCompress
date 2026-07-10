@@ -14,6 +14,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.widlily.wicompress.ui.components.CustomCard
+import com.widlily.wicompress.ui.components.MediaThumbnail
 import com.widlily.wicompress.ui.theme.MintAccent
 import com.widlily.wicompress.ui.theme.PurpleAccent
 import com.widlily.wicompress.ui.theme.Shapes
@@ -108,15 +109,15 @@ fun HistoryScreen(
                                 modifier = Modifier.fillMaxWidth(),
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
-                                // Miniature thumbnail placeholder
                                 Box(
                                     modifier = Modifier
                                         .size(64.dp)
                                         .clip(Shapes.small)
-                                        .background(Color.DarkGray),
-                                    contentAlignment = Alignment.Center
                                 ) {
-                                    Text(text = "📹", fontSize = 20.sp)
+                                    MediaThumbnail(
+                                        path = record.compressedPath,
+                                        modifier = Modifier.fillMaxSize()
+                                    )
                                     Box(
                                         modifier = Modifier
                                             .align(Alignment.BottomEnd)

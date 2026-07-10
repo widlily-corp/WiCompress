@@ -21,6 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.widlily.wicompress.ui.components.CustomCard
+import com.widlily.wicompress.ui.components.MediaThumbnail
 import com.widlily.wicompress.ui.theme.MintAccent
 import com.widlily.wicompress.ui.theme.OrangeAccent
 import com.widlily.wicompress.ui.theme.PurpleAccent
@@ -146,16 +147,12 @@ fun DuplicateFinderScreen(
                                             .padding(vertical = 6.dp),
                                         verticalAlignment = Alignment.CenterVertically
                                     ) {
-                                        // Visual thumbnail mock
-                                        Box(
-                                            modifier = Modifier
-                                                .size(44.dp)
-                                                .clip(Shapes.small)
-                                                .background(Color.DarkGray),
-                                            contentAlignment = Alignment.Center
-                                        ) {
-                                            Text(text = "🎬", fontSize = 16.sp)
-                                        }
+                                         MediaThumbnail(
+                                             uri = file.uri,
+                                             modifier = Modifier
+                                                 .size(44.dp)
+                                                 .clip(Shapes.small)
+                                         )
 
                                         Spacer(modifier = Modifier.width(8.dp))
 

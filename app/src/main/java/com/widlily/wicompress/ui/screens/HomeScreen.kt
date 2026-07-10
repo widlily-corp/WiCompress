@@ -22,6 +22,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.widlily.wicompress.ui.components.CustomCard
 import com.widlily.wicompress.ui.components.GradientCard
+import com.widlily.wicompress.ui.components.MediaThumbnail
 import com.widlily.wicompress.ui.theme.MintAccent
 import com.widlily.wicompress.ui.theme.OrangeAccent
 import com.widlily.wicompress.ui.theme.PurpleAccent
@@ -440,12 +441,10 @@ fun HomeScreen(
                                     .fillMaxWidth()
                                     .height(90.dp)
                                     .clip(Shapes.small)
-                                    .background(Color.DarkGray),
-                                contentAlignment = Alignment.Center
                             ) {
-                                Text(
-                                    text = "🎬",
-                                    fontSize = 24.sp
+                                MediaThumbnail(
+                                    path = history.compressedPath,
+                                    modifier = Modifier.fillMaxSize()
                                 )
                                 Box(
                                     modifier = Modifier
