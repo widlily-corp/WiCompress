@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     width="108dp"
     height="108dp"
     viewportWidth="108"
     viewportHeight="108">
-    <path
-        android:fillColor="#FFBB86FC"
-        android:pathData="M30,30h48v8h-48z M40,48h28v8h-28z M48,66h12v8h-12z" />
+    
+    <!-- Outer Chevron forming a downward compressing funnel -->
+    <path android:pathData="M 24,38 L 36,38 L 54,62 L 72,38 L 84,38 L 54,78 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="24.0"
+                android:startY="38.0"
+                android:endX="84.0"
+                android:endY="78.0"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#A78BFA" /> <!-- Purple Accent -->
+                <item android:offset="1.0" android:color="#34D399" /> <!-- Mint Accent -->
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Chevron representing scaling up / optimization -->
+    <path android:pathData="M 36,70 L 54,46 L 72,70 L 60,70 L 54,58 L 48,70 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="36.0"
+                android:startY="46.0"
+                android:endX="72.0"
+                android:endY="70.0"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#34D399" /> <!-- Mint Accent -->
+                <item android:offset="1.0" android:color="#818CF8" /> <!-- Light Indigo -->
+            </gradient>
+        </aapt:attr>
+    </path>
 </vector>
