@@ -1,0 +1,21 @@
+# Gradle files
+.gradle/
+build/
+
+# Android Studio / IntelliJ files
+.idea/
+*.iml
+.navigation/
+
+# Native compiler builds
+.cxx/
+*.o
+*.so
+*.a
+
+# Local developer overrides
+local.properties
+
+# OS generated files
+.DS_Store
+Thumbs.db

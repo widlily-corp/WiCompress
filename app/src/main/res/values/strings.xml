@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WiCompress</string>
+    
+    <!-- Navigation tabs -->
+    <string name="tab_home">Home</string>
+    <string name="tab_activity">Activity</string>
+    <string name="tab_history">History</string>
+    <string name="tab_settings">Settings</string>
+    
+    <!-- Home screen strings -->
+    <string name="total_space_saved">TOTAL SPACE SAVED</string>
+    <string name="recent_compressed_files">RECENT</string>
+    
+    <!-- Service related strings -->
+    <string name="compression_notification_channel">Video Compression</string>
+    <string name="compression_notification_title">WiCompress Processing</string>
+    <string name="compression_notification_description">Compacting video queues in background...</string>
+</resources>
