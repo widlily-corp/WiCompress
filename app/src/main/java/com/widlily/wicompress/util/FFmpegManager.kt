@@ -89,7 +89,7 @@ object FFmpegManager {
                 if (durationMs > 0) {
                     val timeInMillis = statistics.time
                     val progress = (timeInMillis.toFloat() / durationMs.toFloat()).coerceIn(0f, 1f) * 100f
-                    val speed = statistics.speed
+                    val speed = statistics.speed.toFloat()
                     
                     val remainingDurationMs = durationMs - timeInMillis
                     val etaSeconds = if (speed > 0) {
@@ -154,7 +154,7 @@ object FFmpegManager {
             { statistics ->
                 if (durationMs > 0) {
                     val progress = (statistics.time.toFloat() / durationMs.toFloat()).coerceIn(0f, 1f) * 100f
-                    listener.onProgress(progress, statistics.speed, 0)
+                    listener.onProgress(progress, statistics.speed.toFloat(), 0)
                 }
             }
         )
