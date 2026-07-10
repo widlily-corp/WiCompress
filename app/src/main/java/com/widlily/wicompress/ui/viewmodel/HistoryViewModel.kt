@@ -36,7 +36,6 @@ class HistoryViewModel(application: Application) : AndroidViewModel(application)
 
     private fun filterList(list: List<CompressionHistory>, filter: String): List<CompressionHistory> {
         val now = System.currentTimeMillis()
-        val calendar = Calendar.getInstance()
         
         return when (filter) {
             "Today" -> {

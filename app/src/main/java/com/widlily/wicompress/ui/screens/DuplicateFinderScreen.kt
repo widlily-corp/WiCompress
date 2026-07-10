@@ -31,7 +31,6 @@ import com.widlily.wicompress.ui.viewmodel.DuplicateFinderViewModel
 fun DuplicateFinderScreen(
     viewModel: DuplicateFinderViewModel
 ) {
-    val context = LocalContext.current
     val isScanning by viewModel.isScanning.collectAsState()
     val scanProgress by viewModel.scanProgress.collectAsState()
     val duplicateGroups by viewModel.duplicateGroups.collectAsState()
