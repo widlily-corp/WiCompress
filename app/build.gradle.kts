@@ -9,7 +9,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.widlily.wicompress"
+        applicationId = "com.widlily.wicompress.app"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
