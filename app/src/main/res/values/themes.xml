@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.WiCompress" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.WiCompress" parent="@android:style/Theme.DeviceDefault.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:statusBarColor">#08090A</item>
         <item name="android:windowBackground">#08090A</item>
