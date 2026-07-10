@@ -98,8 +98,8 @@ dependencies {
     implementation("androidx.room:room-ktx:$roomVersion")
     ksp("androidx.room:room-compiler:$roomVersion")
 
-    // FFmpeg Kit Full (with MediaCodec NDK hardware support)
-    implementation("com.arthenica:ffmpeg-kit-full:6.0-2")
+    // FFmpeg Kit Full (with MediaCodec NDK hardware support) - using community mirror due to Arthenica's retirement
+    implementation("io.github.maitrungduc1410:ffmpeg-kit-full:6.0-2")
 
     // Testing
     testImplementation("junit:junit:4.13.2")
