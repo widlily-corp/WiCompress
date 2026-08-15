@@ -19,3 +19,4 @@ local.properties
 # OS generated files
 .DS_Store
 Thumbs.db
+.agents/
